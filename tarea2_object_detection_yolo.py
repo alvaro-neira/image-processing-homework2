@@ -241,7 +241,7 @@ class Metrics:
   def __init__(self):
     self.positives = []
     self.negatives = []
-    self.accuraccy = 0
+    self.accuracy = 0
 
   def calculate_accuracy(self):
 
@@ -305,15 +305,15 @@ class Metrics:
           )
         print(log)
 
-      # Se calcula el accuraccy
-      self.accuraccy = n_positive / n_total
+      # Se calcula el accuracy
+      self.accuracy = n_positive / n_total
 
       # Muestra resultados
       result = {
           'n_positive: ': n_positive,
           'n_negative: ': n_negative,
           'n_total: ': n_total,
-          'accuracy': self.accuraccy
+          'accuracy': self.accuracy
       }
       print(result)
 
